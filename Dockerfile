@@ -1,11 +1,11 @@
 FROM java:8 
 
 # Install maven
-RUN apt-get install -y maven
+# RUN apt-get install -y maven
 
-RUN ["mvn", "package"]
+# RUN ["mvn", "package"]
 
-ADD ./target/spring-boot-sandbox-1.0-SNAPSHOT.jar /root/app.jar
+ADD spring-boot-sandbox-1.0-SNAPSHOT.jar /root/app.jar
 
 EXPOSE 8080
 
