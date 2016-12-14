@@ -10,4 +10,4 @@ ADD spring-boot-sandbox-1.0-SNAPSHOT.jar /root/app.jar
 EXPOSE 8080
 
 ENV MESSAGE="message from Blue Mix Docker config"
-ENTRYPOINT ["java", "-jar","/root/app.jar"]
+CMD ["java", "-jar","/root/app.jar"]
