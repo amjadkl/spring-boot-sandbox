@@ -21,7 +21,7 @@ public class ExampleController {
     @RequestMapping("/")
     public ExampleResponse home() {
         ExampleResponse messages = new ExampleResponse();
-        messages.addMessage("Java system property (server.port): [" + System.getProperty("server.port") + "]");
+        messages.addMessage("Java system property ak (server.port): [" + System.getProperty("server.port") + "]");
         messages.addMessage("Environment variable via System.getenv(MESSAGE): [" + System.getenv("MESSAGE") + "]");
         return messages;
     }
